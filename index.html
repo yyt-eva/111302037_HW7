@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 左側 Sidebar -->
+    <div class="sidebar">
+      <div class="profile">
+        <img src="correct.jpg"style="width: 300px; height: 400px;">
+        <h1 id="name-display">EVA YANG 
+          <button id="edit-btn" class="edit-btn">edit</button>
+        </h1>
+      </div>
+      <div class="about">
+        <h2>ABOUT ME</h2>
+        <p>
+          I am a junior in the Department of Money and Banking at National Chengchi University. I am very interested in studying programming and computer science fundamentals. I have experience in writing HTML, CSS, JavaScript, and Python.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>CONTACT</h2>
+        <p>111302037@nccu.edu.tw</p>
+      </div>
+    </div>
+
+    <!-- 右側 Main Content -->
+    <div class="main-content">
+      <!-- 教育背景 -->
+      <div class="education">
+        <h2>Education</h2>
+        <p>2022 - now <br><strong>National Chengchi University, Department of MAB</strong> <br>Computer Science</p>
+        <p>2020 - 2022 <br><strong>Taipei Municipal Dazhi High School</strong> <br>Participated in food making club</p>
+        <p>2018 - 2020 <br><strong>Middle School Graduation</strong> <br>Started developing an interest in computer science</p>
+      </div>
+
+      <!-- 作業清單 -->
+      <div class="homework">
+        <h2>Homework List</h2>
+        <ul>
+          <li>HW1 - <a href="#">https://github.com/yyt-eva/HW1.git</a></li>
+          <li>HW2 - <a href="#">https://github.com/yyt-eva/HW2.git</a></li>
+          <li>HW3 - <a href="#">https://github.com/yyt-eva/HW3.git</a></li>
+        </ul>
+      </div>
+
+      <!-- 音樂清單 -->
+      <div class="music">
+        <h2>Favorite Music</h2>
+        <div id="music-list" class="music-list">
+          <div class="music-item">
+            <img src="spotify.png" alt="Spotify Icon">
+            <p>21</p>
+          </div>
+        </div>
+        <button id="add-music-btn" class="add-btn">add</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 音樂表單（隱藏） -->
+  <div id="music-form-container" class="music-form hidden">
+    <h3>Add Music</h3>
+    <input id="music-link" type="text" placeholder="Enter Music Link">
+    <input id="music-name" type="text" placeholder="Enter Music Name">
+    <button id="submit-music-btn">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
