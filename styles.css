@@ -1,0 +1,100 @@
+/* Reset 基本樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  background-color: #fff;
+}
+
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  width: 30%;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.edit-btn {
+  font-size: 12px;
+  margin-left: 10px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.main-content {
+  width: 70%;
+  padding: 20px;
+}
+
+.music-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.music-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 0 0;
+}
+
+.music-item img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.add-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 音樂表單樣式 */
+.music-form {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.music-form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
